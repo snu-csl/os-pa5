@@ -81,7 +81,7 @@ To complete this task, you need to implement path resolution logic capable of ha
 
 In order to parse relative paths correctly within system call handlers, each process should maintain information about its current working directory. This directory is initially inherited from the parent process during `fork()` and can be updated later using the `chdir()` system call. 
 
-As part of this task, you are required to implement a new system call, `pwd()`, which returns the absolute pathname of the current working directory for the calling process. This pathname is crucial for both system calls and shell commands, as it provides the necessary context for dynamically resolving relative paths. The system call number of `pwd()` has already been assigned as 22 in the `./kernel/syscall.h` file.
+As part of this task, you are required to implement a new system call, `pwd()`, which returns the absolute pathname of the current working directory for the calling process. This pathname is crucial for both system calls and shell commands, as it provides the necessary context for dynamically resolving relative paths. The system call number of `pwd()` has already been assigned as 23 in the `./kernel/syscall.h` file.
 
 __SYNOPSYS__
 ```
