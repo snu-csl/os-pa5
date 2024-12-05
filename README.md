@@ -95,8 +95,8 @@ __DESCRIPTION__
 
 __RETURN VALUE__
 
-* On success, returns 1.
-* If the argument `buf` is NULL or points to an invalid address, returns 0.
+* On success, returns 0.
+* If the argument `buf` is NULL or points to an invalid address, returns -1.
 
 Your implementation must ensure that file system operations, such as file creation, deletion, and traversal, work seamlessly on multi-core systems with the new directory structure introduced by FullFS. The correctness of your implementation will be validated by passing the `usertests` suite with the `-q` option. Note that some irrelevant test cases in the `usertests` suite have been disabled in the provided skeleton code.
 
@@ -200,7 +200,7 @@ exec ls failed
 $ ../ls                             <- list files in the current directory
 1 23 1 0 jinsoo
 $ cd jinsoo                         <- change the current directory to /home/jinsoo
-$ pwd                               <- show the current directory
+$ ../../pwd                         <- show the current directory
 /home/jinsoo
 $ /ls                               <- list files in the current directory
 2 24 1 2403 README2
