@@ -259,10 +259,10 @@ xFFS parameters related to the file system layout are defined in `kernel/param.h
 #define BITMAP_PER_BG 1
 #define INODE_PER_BG  8
 #define BLOCKS_PER_BG 2048 // size of block group in blocks
-#define FSSIZE         (BLOCKS_PER_BG * NBG + LOGBLOCKS + GDTBLOCKS + 3)
-                       // +1 for boot
-                       // +1 for superblock
-                       // +1 for logblock header
+#define FSSIZE        (BLOCKS_PER_BG * NBG + LOGBLOCKS + GDTBLOCKS + 3)
+                      // +1 for boot
+                      // +1 for superblock
+                      // +1 for logblock header
 ```
 
 In the original `xv6`, `mkfs/mkfs.c` uses `NINODES` to determine the required number of inode blocks.
