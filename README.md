@@ -357,8 +357,10 @@ $ fstest r 0   # read only "fsmall"
 * For your reference, the following roughly shows the required code changes; each `+` denotes about 1~10 lines to add, remove, or modify.
   ```
   mkfs/mkfs.c          |  +++++++++
+  kernel/defs.h        |  +
   kernel/fs.h          |  ++
   kernel/fs.c          |  ++++++++++++++++++
+  kernel/sysfile.c     |  +
   ```
   
 
