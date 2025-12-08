@@ -231,7 +231,7 @@ The top ten submissions with the smallest total seek distance for a given set of
 * Your implementation must ensure that file system operations, such as file creation, deletion, and traversal, work seamlessly on multi-core RISC-V systems with the new on-disk layout introduced by xFFS. The correctness of your implementation will be validated using `usertests`.
 * For Parts 1 and 2, we will build and run your code without special compiler options. For Part 3, however, we will compile with the `-DPART3` flag. Please wrap any Part 3-specific changes within `#ifdef PART3` ... `#endif`. If your Part 3 allocator works correctly, you do not need to keep the original allocator working, and you may omit `PART3` flag entirely.
 * Please use `qemu` version 8.2.0 or later. To check your `qemu` version, run: `$ qemu-system-riscv64 --version`
-* You only need to change the following files: `mkfs/mkfs.c`, `kernel/fs.h`, and `kernel/fs.c`. Any other changes will be ignored during grading.
+* You only need to change the following files: `mkfs/mkfs.c`, `kernel/defs.h`, `kernel/fs.c`, `kernel/fs.h` and `kernel/sysfile.c`. Any other changes will be ignored during grading.
    
 ## Skeleton Code
 
