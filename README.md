@@ -281,7 +281,7 @@ The final ranking will be computed only among submissions that satisfy the corre
 The exact performance scoring thresholds will be calibrated after validating that the metric is stable and meaningful across workloads. 
 
 
-### Part 4. Design Document (10 points)
+### Part 5. Design Document (10 points)
 
 Along with your code, submit a design document in a single PDF file. Your document should include the following sections.
 
