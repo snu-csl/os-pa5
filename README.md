@@ -278,7 +278,8 @@ The following restrictions apply:
 
 The skeleton code includes the `bflush()` and `crofs_stats()` system calls to flush the disk buffers and collect various statistics for grading.
 The final ranking will be computed only among submissions that satisfy the correctness in Part 3. 
-For the performance score in Part 4, submissions will be graded based on the combined metric Rs * Rt. A submission with Rs * Rt >= 1.25 will receive the full 30 points. A submission with Rs * Rt >= 1.10 will receive 25 points, and a submission with Rs * Rt >= 1.00 will receive 20 points. For values below 1.00, the score will decrease by 5 points for each additional 0.10 decrease in Rs * Rt.
+
+For the performance score in Part 4, submissions will be graded based on the combined metric `Rs * Rt`. A submission with `Rs * Rt >= 1.25` will receive the full 30 points. A submission with `Rs * Rt >= 1.10` will receive 25 points, and a submission with `Rs * Rt >= 1.00` will receive 20 points. For values below 1.00, the score will decrease by 5 points for each additional 0.10 decrease in `Rs * Rt`.
 Bonus points will be awarded based on the final Rs * Rt ranking among submissions that satisfy the correctness requirements in Part 3. The top 10 submissions will receive 20 bonus points, and the next 10 submissions will receive 10 bonus points.
 
 
